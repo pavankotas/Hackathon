@@ -6,7 +6,7 @@ const express = require('express'),
 
 config = require('./db');
 
-// const customerRoute = require('./route/customerroute');
+const userRoute = require('./routes/user');
 
 mongoose.Promise = global.Promise;
 
@@ -23,7 +23,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-// app.use('/api/customer', customerRoute);
+app.use('/user', customerRoute);
 
 const server = app.listen(port, function(){
     console.log('Listening on port ' + port);

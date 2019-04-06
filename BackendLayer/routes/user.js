@@ -2,15 +2,8 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
 
-
-// GET route for reading data
-router.get('/', function (req, res, next) {
-    return res.sendFile(path.join(__dirname + '/templateLogReg/index.html'));
-});
-
-
 //POST route for updating data
-router.post('/', function (req, res, next) {
+router.post('/login', function (req, res, next) {
     // confirm that user typed same password twice
     if (req.body.password !== req.body.passwordConf) {
         var err = new Error('Passwords do not match.');
@@ -39,8 +32,8 @@ router.post('/', function (req, res, next) {
             }
         });
 
-    } else if (req.body.logemail && req.body.logpassword) {
-        User.authenticate(req.body.logemail, req.body.logpassword, function (error, user) {
+    } else if (req.body.email && req.body.password) {
+        User.authenticate(req.body.email, req.body.password, function (error, user) {
             if (error || !user) {
                 var err = new Error('Wrong email or password.');
                 err.status = 401;
@@ -83,7 +76,7 @@ router.get('/logout', function (req, res, next) {
             if (err) {
                 return next(err);
             } else {
-                return res.redirect('/');
+                return res.redirect('/login');
             }
         });
     }

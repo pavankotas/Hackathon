@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {LoginComponent} from "./login/login.component";
@@ -18,7 +19,7 @@ import { OpenTicketsComponent } from './AccountOwner/ManageTickets/open-tickets/
 import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-tickets/history-tickets.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AgmCoreModule } from '@agm/core';
-import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    NgbModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
       apiKey: 'AIzaSyBdNOvbKOsJNJFy3eni6DSl0t7JeJAd6Wo',

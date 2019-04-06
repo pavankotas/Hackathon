@@ -10,6 +10,30 @@ export class ListAccountsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+  account= [
+    {
+      organizationName: 'UMKC',
+      address: 'Address',
+      phoneNumber: '8166944857',
+      adminUser: 'Dharani Muli',
+
+    },
+    {
+      organizationName: 'UMKC',
+      address: 'Address',
+      phoneNumber: '8166944857',
+      adminUser: 'Dharani Muli',
+
+    },
+    {
+      organizationName: 'UMKC',
+      address: 'Address',
+      phoneNumber: '8166944857',
+      adminUser: 'Dharani Muli',
+
+    }
+  ];
 
 }
