@@ -19,7 +19,6 @@ import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-ti
 
 @NgModule({
   declarations: [
-    NgbModule,
     AppComponent,
     LoginComponent,
     ListAccountsComponent,
@@ -36,7 +35,8 @@ import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-ti
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
