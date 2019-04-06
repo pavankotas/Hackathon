@@ -9,6 +9,7 @@ declare const google: any;
 export class AddLocationComponent implements OnInit {
 
   constructor() { }
+  map;
 
   ngOnInit() {
   }
@@ -19,8 +20,15 @@ export class AddLocationComponent implements OnInit {
     lng: -94.575721
   };
 
+  addLocation() {
+    this.initDrawingManager(this.map);
+  }
+
+  saveLocation() {}
+
   onMapReady(map) {
-    this.initDrawingManager(map);
+    // this.initDrawingManager(map);
+    this.map = map;
   }
 
   initDrawingManager(map: any) {
