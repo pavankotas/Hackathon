@@ -4,7 +4,7 @@ const app = express();
 
 const accountRoutes = express.Router();
 
-// Require customer model in our routes module
+// Require Account model in our routes module
 let Account = require('../models/account');
 
 // Add Customer
