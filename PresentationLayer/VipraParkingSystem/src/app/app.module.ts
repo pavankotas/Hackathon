@@ -17,6 +17,7 @@ import { ListPermitsComponent } from './AccountOwner/ManagePermits/list-permits/
 import { OpenTicketsComponent } from './AccountOwner/ManageTickets/open-tickets/open-tickets.component';
 import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-tickets/history-tickets.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     NgbModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AgmCoreModule.forRoot({
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      apiKey: 'AIzaSyBdNOvbKOsJNJFy3eni6DSl0t7JeJAd6Wo',
+      libraries: ['places', 'drawing', 'geometry']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
