@@ -1,3 +1,8 @@
-<p>
-  add-location works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <h3>Add Parking Lots</h3>
+    <p>To add new parking lot draw rectangle and click on save button</p>
+  </div>
+</div>
+<agm-map [latitude]="center.lat" [longitude]="center.lng" (mapReady)="onMapReady($event)" >
+</agm-map>
