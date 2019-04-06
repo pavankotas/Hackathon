@@ -19,6 +19,7 @@ import { OpenTicketsComponent } from './AccountOwner/ManageTickets/open-tickets/
 import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-tickets/history-tickets.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AgmCoreModule } from '@agm/core';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AgmCoreModule } from '@agm/core';
     NgbModule,
     FormsModule,
     NgbModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
       apiKey: 'AIzaSyBdNOvbKOsJNJFy3eni6DSl0t7JeJAd6Wo',
