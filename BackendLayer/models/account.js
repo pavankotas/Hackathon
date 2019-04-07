@@ -3,16 +3,13 @@ const Schema = mongoose.Schema;
 
 // Define collection and schema for customer
 let accountSchema = new Schema({
-    account_id: {
-        type: String
-    },
     firstName: {
         type: String
     },
     lastName: {
         type: String
     },
-    userName: {
+    emailID: {
         type: String
     },
     password: {
@@ -21,7 +18,13 @@ let accountSchema = new Schema({
     organizationName: {
         type: String
     },
-    address_line1:{
+    address:{
+      type: String
+    },
+    userType:{
+        type: String
+    }
+   /* address_line1:{
         type: String
     },
     address_line2:{
@@ -35,7 +38,7 @@ let accountSchema = new Schema({
     },
     zip:{
         type: String
-    }
+    }*/
 },{
     collection: 'Account'
 });

@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   userName = '';
   emailID = '';
   password = '';
+  userType=';'
   // userType = '';
   organizationName = '';
   startDate = '';
@@ -32,17 +33,31 @@ export class LoginComponent implements OnInit {
           emailID: this.emailID,
           password: this.password
       };
+    console.log('before login service call', user);
       /*Checking if users exists in DB by calling LoginServices*/
       this.loginService.authenticate(user).subscribe( (data) => {
         /*Receives success message if user exists and with correct credentails*/
         // @ts-ignore
-        if (data.message === 'success') {
-          console.log(data);
+        if (data.message === 'success')
+        {
+          // @ts-ignore
+          console.log('logged in data', data.userType);
           // const userInfo = this.loggedInUserInfo.getUsers();
           // console.log(userInfo);
-          this.router.navigate(['/addAccount']);
+          // @ts-ignore
+          if(data.userType == 'Application Owner') {
+            this.router.navigate(['/addAccount']);
+          }
+          else { // @ts-ignore
+            // @ts-ignore
+            if (data.userType == 'Organization Admin') {
+                        this.router.navigate(['/dashboard']);
+                      }
+          }
           // @ts-ignore
           console.log(data.message);
+          // @ts-ignore
+          localStorage.setItem('userType', data.userType);
           // localStorage.setItem('userType', data.userType);
         } else {
           // @ts-ignore

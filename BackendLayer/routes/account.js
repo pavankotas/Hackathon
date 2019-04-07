@@ -8,22 +8,24 @@ const accountRoutes = express.Router();
 let Account = require('../models/account');
 
 // Add Customer
-accountRoutes.route('/add').post(function (req, res) {
+accountRoutes.route('/addAccount').post(function (req, res) {
     let account = new Account(req.body);
-    Account.save()
-        .then(customer => {
-            res.status(200).json({'Result': 'Account added successfully'});
+    console.log(account);
+    Account.create(account)
+        .then(account => {
+            res.status(200).json({message:'success','Result': 'Account added successfully'});
         })
         .catch(err => {
-            res.status(400).send({'Result': 'Unable to create account.'});
+            res.status(400).send({message:'unsuccess','Result': 'Unable to create account.'});
         });
 });
 
 // Get all accounts
-accountRoutes.route('/getall').get(function (req, res, next) {
-    Account.find(function (err, accounts) {
+accountRoutes.route('/getallAccounts').get(function (req, res, next) {
+    console.log('in backend route page');
+    Account.find(function (err, account) {
         if (err) return next(err);
-        res.json(accounts);
+        res.json(account);
     });
 });
 
