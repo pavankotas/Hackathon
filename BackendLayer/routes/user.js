@@ -1,85 +1,37 @@
-var express = require('express');
-var router = express.Router();
-var User = require('../models/user');
+const express =require('express');
+const userRouter = express.Router();
+const User = require('../models/user');
+// const jwt = require('jsonwebtoken');
 
-//POST route for updating data
-router.post('/login', function (req, res, next) {
-    // confirm that user typed same password twice
-    if (req.body.password !== req.body.passwordConf) {
-        var err = new Error('Passwords do not match.');
-        err.status = 400;
-        res.send("passwords dont match");
-        return next(err);
-    }
+//get user details by Email Id
 
-    if (req.body.email &&
-        req.body.username &&
-        req.body.password &&
-        req.body.passwordConf) {
-
-        var userData = {
-            email: req.body.email,
-            username: req.body.username,
-            password: req.body.password,
+userRouter.post('',function (req, res, next) {
+    let user = new User(req.body);
+    User.findOne({emailID : user.emailID}, function (err, data) {
+        if( data != null ) {
+            if (user.password == data.password) {
+                console.log({message: "success",userID:data.emailID, userType: data.userType});
+                res.json({message: "success",userID:data.emailID, userType: data.userType});
+            } else {
+                res.json({message:"Invalid credentials"});
+            }
         }
-
-        User.create(userData, function (error, user) {
-            if (error) {
-                return next(error);
-            } else {
-                req.session.userId = user._id;
-                return res.redirect('/profile');
-            }
-        });
-
-    } else if (req.body.email && req.body.password) {
-        User.authenticate(req.body.email, req.body.password, function (error, user) {
-            if (error || !user) {
-                var err = new Error('Wrong email or password.');
-                err.status = 401;
-                return next(err);
-            } else {
-                req.session.userId = user._id;
-                return res.redirect('/profile');
-            }
-        });
-    } else {
-        var err = new Error('All fields required.');
-        err.status = 400;
-        return next(err);
-    }
+        else{
+            res.json({message:'User doesnot exists'});
+        }
+    });
 })
 
-// GET route after registering
-router.get('/profile', function (req, res, next) {
-    User.findById(req.session.userId)
-        .exec(function (error, user) {
-            if (error) {
-                return next(error);
-            } else {
-                if (user === null) {
-                    var err = new Error('Not authorized! Go back!');
-                    err.status = 400;
-                    return next(err);
-                } else {
-                    return res.send('<h1>Name: </h1>' + user.username + '<h2>Mail: </h2>' + user.email + '<br><a type="button" href="/logout">Logout</a>')
-                }
-            }
+userRouter.post('/register', function (req, res, next) {
+    let user = new User(req.body);
+    User.create(user)
+        .then(user => {
+            res.status(200).json({'Result': 'User added successfully'});
+        })
+        .catch(err => {
+            console.log("Cannot add user");
+            res.status(400).send(err);
         });
-});
+})
 
-// GET for logout logout
-router.get('/logout', function (req, res, next) {
-    if (req.session) {
-        // delete session object
-        req.session.destroy(function (err) {
-            if (err) {
-                return next(err);
-            } else {
-                return res.redirect('/login');
-            }
-        });
-    }
-});
-
-module.exports = router;
+module.exports = userRouter;

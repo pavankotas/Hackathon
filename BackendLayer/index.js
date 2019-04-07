@@ -23,7 +23,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use('/user', customerRoute);
+app.use('/user', userRoute);
 
 const server = app.listen(port, function(){
     console.log('Listening on port ' + port);
