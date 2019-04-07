@@ -27,6 +27,9 @@ const PermitSchema = new mongoose.Schema({
     region:{
         type: String
     },
+    parkingLotName:{
+        type: String
+    },
     cost:{
         type: String
     },

@@ -42,6 +42,8 @@ locationRoutes.route('/:id').get(function (req, res, next) {
 
 // Update Location
 locationRoutes.route('/:id').put(function(req, res, next){
+    console.log("______________inside put_______________");
+    console.log(req.body);
     Location.findByIdAndUpdate(req.params.id, req.body, function (err,post){
         if (err) return next(err);
         res.json(post);

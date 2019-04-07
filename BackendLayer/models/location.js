@@ -19,10 +19,10 @@ let locationSchema = new Schema({
         type: String
     },
     occupied: {
-        type: String
+        type: Number
     },
     available: {
-        type: String
+        type: Number
     }
 },{
     collection: 'Location'
