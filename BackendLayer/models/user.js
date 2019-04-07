@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema({
     userName: {
         type: String,
         unique:true,
-        required:  [true, 'Email address cannot be left blank'],
+        required:  [true, 'User Name cannot be left blank'],
         trim:true
     },
     password:{

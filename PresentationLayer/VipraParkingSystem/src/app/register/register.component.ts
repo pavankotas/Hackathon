@@ -33,22 +33,22 @@ export class RegisterComponent implements OnInit {
       lastName: this.lastName,
       userName: this.userName,
       userType: this.userType,
-      email: this.emailID,
+      emailID: this.emailID,
       password: this.password,
-      passwordConf: this.password,
-      organizationName: this.organizationName,
+      /*passwordConf: this.password,*/
+     /* organizationName: this.organizationName,
       startDate: this.startDate,
-      endDate: this.endDate
+      endDate: this.endDate*/
     };
     /*Checking if users exists in DB by calling LoginServices*/
     this.loginService.register(user).subscribe( (data) => {
       /*Receives success message if user exists and with correct credentails*/
       // @ts-ignore
-      if (data.message === 'Success') {
+      if (data.message === 'success') {
         console.log(data);
         // const userInfo = this.loggedInUserInfo.getUsers();
         // console.log(userInfo);
-        this.router.navigate(['./appOwner_list-accounts']);
+        this.router.navigate(['/login']);
         // @ts-ignore
         console.log(data.message);
       } else {

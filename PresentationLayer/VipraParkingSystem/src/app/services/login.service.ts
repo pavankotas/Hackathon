@@ -15,7 +15,8 @@ export class LoginService {
     return this.http.post(`${this.uri}`, user);
   }
   register(user) {
-    return this.http.post(`${this.uri}`, user);
+    console.log(user);
+    return this.http.post(`${this.uri}`+'/register', user);
   }
 
 }

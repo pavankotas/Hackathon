@@ -9,11 +9,13 @@ import {AddUserComponent} from "./AccountOwner/ManageUsers/add-user/add-user.com
 import { ListLocationComponent} from "./AccountOwner/ManageLocations/list-location/list-location.component";
 import { AddPermitComponent} from "./AccountOwner/ManagePermits/add-permit/add-permit.component";
 import { ListPermitsComponent} from "./AccountOwner/ManagePermits/list-permits/list-permits.component";
-import {  OpenTicketsComponent} from "./AccountOwner/ManageTickets/open-tickets/open-tickets.component";
+import { OpenTicketsComponent} from "./AccountOwner/ManageTickets/open-tickets/open-tickets.component";
 import { HistoryTicketsComponent} from "./AccountOwner/ManageTickets/history-tickets/history-tickets.component";
+import {RegisterComponent} from "./register/register.component";
 
 const routes: Routes = [
-  { path: '', component:LoginComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component:LoginComponent },
   { path: 'addLocation', component: AddLocationComponent},
   { path: 'viewAllLocations', component:ListLocationComponent },
   { path: 'viewAllAccounts', component:ListAccountsComponent },
@@ -23,6 +25,7 @@ const routes: Routes = [
   { path: 'viewAllPermits', component:ListPermitsComponent },
   { path: 'viewAlltickets', component:OpenTicketsComponent },
   { path: 'ticketHistory', component:HistoryTicketsComponent },
+  { path: 'registerUser', component:RegisterComponent },
 
 ];
 

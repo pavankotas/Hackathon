@@ -1,23 +1,19 @@
 
-  <nav class="navbar navbar-light bg-light navbar-expand-md navbar-fixed-top">
-    <div class="navbar-collapse container">
-      <div class="col-2">
-        <div class="navbar-nav mr-auto">
+  <nav class="navbar fixed-top navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse container" id="navbarToggler">
+        <div class="navbar-nav">
           <a class="navbar-brand heading" href="/home">VipraPM</a>
         </div>
-      </div>
-      <div class="col-4">
-        <ul class="nav navbar-nav" routerLinkActive="active">
-          <li class="nav-item"><a class="nav-link" routerLink="appOwner_list-accounts">Accounts</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="appOwner_add-account">Add Account</a></li>
-
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0" routerLinkActive="active" *ngIf="AppOwner">
+          <li class="nav-item"><a class="nav-link" routerLink="/addAccount">{{AppOwner.addAccount}}</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/viewAllAccounts">{{AppOwner.viewAllAccounts}}</a></li>
         </ul>
-      </div>
-      <div class="col-offset-5 col-4">
         <ul class="nav navbar-nav" routerLinkActive="active">
-          <li class="nav-item"><a class="nav-link" routerLink="appOwner_add-account">Logout</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/login">Logout</a></li>
         </ul>
-      </div>
     </div>
   </nav>
 

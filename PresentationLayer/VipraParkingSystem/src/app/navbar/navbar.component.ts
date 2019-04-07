@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ListAccountsComponent} from "../AppOwner/list-accounts/list-accounts.component";
-import {AddAccountComponent} from "../AppOwner/add-account/add-account.component";
+
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +8,19 @@ import {AddAccountComponent} from "../AppOwner/add-account/add-account.component
 })
 export class NavbarComponent implements OnInit {
 
+  AppOwner ={};
   constructor() { }
 
   ngOnInit() {
+    const userType = localStorage.getItem('userType');
+    if(userType == 'Application Owner'){
+      console.log(userType);
+      this.AppOwner = {
+        addAccount : 'Add Accounts',
+        viewAllAccounts: 'ViewAllAccounts'
+      }
+      console.log(this.AppOwner);
+    }
   }
 
 }

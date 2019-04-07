@@ -36,13 +36,14 @@ export class LoginComponent implements OnInit {
       this.loginService.authenticate(user).subscribe( (data) => {
         /*Receives success message if user exists and with correct credentails*/
         // @ts-ignore
-        if (data.message === 'Success') {
+        if (data.message === 'success') {
           console.log(data);
           // const userInfo = this.loggedInUserInfo.getUsers();
           // console.log(userInfo);
-          this.router.navigate(['./appOwner_list-accounts']);
+          this.router.navigate(['/addAccount']);
           // @ts-ignore
           console.log(data.message);
+          localStorage.setItem('userType', data.userType);
         } else {
           // @ts-ignore
           console.log(data.message);
