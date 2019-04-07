@@ -28,10 +28,10 @@
           </form>
       </div>
   </div>
-      <!--<div>-->
-        <!--<input type="text" [(ngModel)]="query">-->
-        <!--<button type="button" class="btn btn-info" (click)="getAddress()">Search</button>-->
-      <!--</div>-->
+      <div>
+        <input type="text" [(ngModel)]="query">
+        <button type="button" class="btn btn-info" (click)="getAddress()">Search</button>
+      </div>
       <agm-map [zoom]="15" [latitude]="center.lat" [longitude]="center.lng" (mapReady)="onMapReady($event)" >
       </agm-map>
     </div>

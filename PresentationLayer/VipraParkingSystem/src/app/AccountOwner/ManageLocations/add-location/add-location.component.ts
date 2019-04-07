@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 declare const google: any;
 import {LocationService} from "../../../services/AccountOwner/location.service";
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-add-location',
@@ -10,13 +12,14 @@ import { Router } from '@angular/router';
 })
 export class AddLocationComponent implements OnInit {
 
-  constructor(private locationService: LocationService, private router: Router) { }
+  constructor(private locationService: LocationService, private router: Router, private http: HttpClient) { }
   map;
   neLat;
   neLng;
   swLat;
   swLng;
-
+  query;
+  address;
 
   ngOnInit() {
   }
@@ -90,6 +93,17 @@ export class AddLocationComponent implements OnInit {
       }
     });
   }
+
+  getAddress(){
+    let apiURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${this.query}&key=AIzaSyBdNOvbKOsJNJFy3eni6DSl0t7JeJAd6Wo`;
+    this.http.get(apiURL).subscribe(response => {
+      this.address = response;
+      console.log(this.address.results[0]);
+      this.center.lat = this.address.results[0].geometry.location.lat;
+      this.center.lng = this.address.results[0].geometry.location.lng;
+    });
+  }
+
 
   getPaths() {
     console.log('get path');
