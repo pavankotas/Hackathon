@@ -16,7 +16,8 @@ export class ListLocationComponent implements OnInit {
   };
 
   locations;
-  rectangle;
+
+  rectanglesCoordinate: any;
 
   constructor(private router: Router, private locationService: LocationService) { }
 
@@ -24,73 +25,93 @@ export class ListLocationComponent implements OnInit {
     this.router.navigate(['./addLocation']);
   }
 
-    north;
-    south;
-    east;
-    west;
 
   ngOnInit() {
     this.locationService.getLocation().subscribe(data => {
       this.locations = data;
+       const rectangles = [];
+      // console.log(this.locations);
+      // this.rectangle = new google.maps.Rectangle({
+      //   strokeColor: '#FF0000',
+      //   strokeOpacity: 0.8,
+      //   strokeWeight: 2,
+      //   fillColor: '#FF0000',
+      //   fillOpacity: 0.35,
+      //   bounds: {
+      //     north: 33.685,
+      //     south: 33.671,
+      //     east: -116.234,
+      //     west: -116.251
+      //   }
+      // });
+      // this.rectangle.setMap();
       this.locations.forEach(function(data){
-          this.north = data.coordinates[0];
-          this.south = data.coordinates[1];
-          this.east = data.coordinates[2];
-          this.west = data.coordinates[3];
+       const rectangle = {
+          north: data.coordinates[0],
+          south: data.coordinates[2],
+          east: data.coordinates[1],
+          west: data.coordinates[3]
+        };
+
+       rectangles.push(rectangle);
       });
+
+      this.rectanglesCoordinate = rectangles;
+      console.log(this.rectanglesCoordinate);
+
     });
   }
-  locationDetails= [
-    {
-      locationName: 'Miller Nichols Library',
-      address: 'Address',
-      latitude: '39.0350° N',
-      longitude: '94.5765° W',
-      generalSlots: '50',
-      specialSlots: '20',
-      cost: '$100',
-
-    },
-    {
-      locationName: 'Miller Nichols Library',
-      address: 'Address',
-      latitude: '39.0350° N',
-      longitude: '94.5765° W',
-      generalSlots: '50',
-      specialSlots: '20',
-      cost: '$100',
-
-    },
-    {
-      locationName: 'Miller Nichols Library',
-      address: 'Address',
-      latitude: '39.0350° N',
-      longitude: '94.5765° W',
-      generalSlots: '50',
-      specialSlots: '20',
-      cost: '$100',
-
-    },
-    {
-      locationName: 'Miller Nichols Library',
-      address: 'Address',
-      latitude: '39.0350° N',
-      longitude: '94.5765° W',
-      generalSlots: '50',
-      specialSlots: '20',
-      cost: '$100',
-
-    },
-    {
-      locationName: 'Miller Nichols Library',
-      address: 'Address',
-      latitude: '39.0350° N',
-      longitude: '94.5765° W',
-      generalSlots: '50',
-      specialSlots: '20',
-      cost: '$100',
-
-    },
-
-  ];
+  // locationDetails= [
+  //   {
+  //     locationName: 'Miller Nichols Library',
+  //     address: 'Address',
+  //     latitude: '39.0350° N',
+  //     longitude: '94.5765° W',
+  //     generalSlots: '50',
+  //     specialSlots: '20',
+  //     cost: '$100',
+  //
+  //   },
+  //   {
+  //     locationName: 'Miller Nichols Library',
+  //     address: 'Address',
+  //     latitude: '39.0350° N',
+  //     longitude: '94.5765° W',
+  //     generalSlots: '50',
+  //     specialSlots: '20',
+  //     cost: '$100',
+  //
+  //   },
+  //   {
+  //     locationName: 'Miller Nichols Library',
+  //     address: 'Address',
+  //     latitude: '39.0350° N',
+  //     longitude: '94.5765° W',
+  //     generalSlots: '50',
+  //     specialSlots: '20',
+  //     cost: '$100',
+  //
+  //   },
+  //   {
+  //     locationName: 'Miller Nichols Library',
+  //     address: 'Address',
+  //     latitude: '39.0350° N',
+  //     longitude: '94.5765° W',
+  //     generalSlots: '50',
+  //     specialSlots: '20',
+  //     cost: '$100',
+  //
+  //   },
+  //   {
+  //     locationName: 'Miller Nichols Library',
+  //     address: 'Address',
+  //     latitude: '39.0350° N',
+  //     longitude: '94.5765° W',
+  //     generalSlots: '50',
+  //     specialSlots: '20',
+  //     cost: '$100',
+  //
+  //   },
+  //
+  // ];
 }

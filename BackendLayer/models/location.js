@@ -17,6 +17,12 @@ let locationSchema = new Schema({
     },
     noOfLots: {
         type: String
+    },
+    occupied: {
+        type: String
+    },
+    available: {
+        type: String
     }
 },{
     collection: 'Location'

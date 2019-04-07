@@ -31,13 +31,15 @@ export class AddLocationComponent implements OnInit {
   //   this.initDrawingManager(this.map);
   // }
 
-  addLocation(event) {
+  addNewLocation(event) {
     const locationDetails = {
       parkingLotName: event.parkingName,
       address: event.address,
       coordinates: [this.neLat, this.neLng, this.swLat, this.swLng],
       fineAmount: event.fineAmount,
-      noOfLots: event.lots
+      noOfLots: event.lots,
+      occupied: 0,
+      available: event.lots
     };
 
     console.log(locationDetails);
@@ -59,7 +61,8 @@ export class AddLocationComponent implements OnInit {
     const options = {
       drawingControl: true,
       drawingControlOptions: {
-        drawingModes: ['rectangle']
+        drawingModes: ['rectangle'],
+        fillColor: '#FF0000'
       },
       rectangleOptions: {
         draggable: true,
@@ -84,9 +87,6 @@ export class AddLocationComponent implements OnInit {
         console.log(this.neLng);
         console.log(this.swLat);
         console.log(this.swLng);
-        // this.coordinates.push(neLng);
-        // this.coordinates.push(swLat);
-        // this.coordinates.push(swLng);
       }
     });
   }

@@ -11,7 +11,7 @@ export class LocationService {
   constructor(private http: HttpClient) { }
 
   addLocation(location){
-    return this.http.post(`${this.uri}`+'/add', location);
+    return this.http.post(`${this.uri}`, location);
   }
 
   getLocation(){

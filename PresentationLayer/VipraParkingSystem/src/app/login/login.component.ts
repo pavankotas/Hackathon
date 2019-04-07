@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   userName = '';
   emailID = '';
   password = '';
-  userType = '';
+  // userType = '';
   organizationName = '';
   startDate = '';
   endDate = '';
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/addAccount']);
           // @ts-ignore
           console.log(data.message);
-          localStorage.setItem('userType', data.userType);
+          // localStorage.setItem('userType', data.userType);
         } else {
           // @ts-ignore
           console.log(data.message);
