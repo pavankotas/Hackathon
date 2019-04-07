@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginService} from "../services/login.service";
+import {LoginService} from '../services/login.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -9,9 +9,17 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  emailID: String = '';
-  password: String = '';
-  InvalidUser: Boolean = false;
+  firstName = '';
+  lastName = '';
+  userName = '';
+  emailID = '';
+  password = '';
+  userType = '';
+  organizationName = '';
+  startDate = '';
+  endDate = '';
+  address = '';
+  InvalidUser = false;
 
   constructor(private loginService: LoginService, private router: Router) {
   }
@@ -20,9 +28,9 @@ export class LoginComponent implements OnInit {
   }
 
   userLogin() {
-    const user = {
-        emailID: this.emailID,
-        password: this.password
+      const user = {
+          emailID: this.emailID,
+          password: this.password
       };
       /*Checking if users exists in DB by calling LoginServices*/
       this.loginService.authenticate(user).subscribe( (data) => {
@@ -41,6 +49,5 @@ export class LoginComponent implements OnInit {
           this.InvalidUser = true;
         }
       });
-    }
-
   }
+}

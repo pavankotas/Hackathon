@@ -11,5 +11,46 @@ export class ListUsersComponent implements OnInit {
 
   ngOnInit() {
   }
+  users= [
+    {
+      firstName: 'Dharani',
+      lasttName: 'Muli',
+      role: 'Patrol User',
+      emailID: 'dharani@gmail.com',
+      username: ' Dharani Muli'
 
+    },
+    {
+      firstName: 'Dharani',
+      lasttName: 'Muli',
+      role: 'Patrol User',
+      emailID: 'dharani@gmail.com',
+      username: ' Dharani Muli'
+
+    },
+    {
+      firstName: 'Dharani',
+      lasttName: 'Muli',
+      role: 'Patrol User',
+      emailID: 'dharani@gmail.com',
+      username: ' Dharani Muli'
+
+    },
+    {
+      firstName: 'Dharani',
+      lasttName: 'Muli',
+      role: 'Patrol User',
+      emailID: 'dharani@gmail.com',
+      username: ' Dharani Muli'
+
+    },
+    {
+      firstName: 'Dharani',
+      lasttName: 'Muli',
+      role: 'Patrol User',
+      emailID: 'dharani@gmail.com',
+      username: ' Dharani Muli'
+
+    }
+  ];
 }

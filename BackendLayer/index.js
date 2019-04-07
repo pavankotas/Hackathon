@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 app.use('/user', userRoute);
 app.use('/addLocation', locationRoutes);
 
+
 const server = app.listen(port, function(){
     console.log('Listening on port ' + port);
 });
