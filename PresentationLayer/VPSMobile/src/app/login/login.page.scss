@@ -1,0 +1,33 @@
+ion-grid {
+  width:100%;
+  height: 100%;
+  //background: #dfdfdf;
+
+}
+
+ion-row {
+  height: 100%;
+}
+
+ion-col {
+  border: 1px solid #488aff;
+  //background: $white-color;
+}
+
+ion-button {
+  font-weight: 300;
+}
+
+.gridBack {
+  // background-image: url("../../assets/pink-colored-barcode-background_82147498685.jpg");
+  background: linear-gradient(to bottom right, #ffffff, #ff99cc);
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  ion-grid {
+    background: none;
+  }
+  ion-col {
+    border: none;
+  }
+}
