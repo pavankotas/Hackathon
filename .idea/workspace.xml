@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b662911-945a-41cd-94f8-b0dd43d56b68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendLayer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackendLayer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendLayer/models/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackendLayer/models/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendLayer/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackendLayer/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackendLayer/routes/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackendLayer/routes/account.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackendLayer/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackendLayer/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManagePermits/add-permit/add-permit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManagePermits/add-permit/add-permit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/list-accounts/list-accounts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/list-accounts/list-accounts.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/login.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AccountOwner/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AccountOwner/user.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,11 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="305">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -45,21 +45,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.html">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/list-users/list-users.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="272">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            <state relative-caret-position="169">
+              <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/list-users/list-users.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+              <folding>
+                <element signature="n#table#0;n#div#1;n#div#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -68,62 +80,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManagePermits/add-permit/add-permit.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="52" selection-end-column="27" />
               <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/dashboard/dashboard.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -132,8 +95,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BackendLayer/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="288">
+              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AccountOwner/user.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="21" column="55" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -168,7 +164,6 @@
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageLocations/add-location/add-location.component.css" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageLocations/add-location/add-location.component.html" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageLocations/add-location/add-location.component.ts" />
-        <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.html" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/list-accounts/list-accounts.component.html" />
         <option value="$PROJECT_DIR$/BackendLayer/models/account.js" />
@@ -180,14 +175,18 @@
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/login.service.ts" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts" />
         <option value="$PROJECT_DIR$/BackendLayer/models/user.js" />
-        <option value="$PROJECT_DIR$/BackendLayer/routes/user.js" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.ts" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.ts" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/dashboard/dashboard.component.html" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.html" />
+        <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AccountOwner/user.service.ts" />
+        <option value="$PROJECT_DIR$/BackendLayer/routes/user.js" />
+        <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.ts" />
         <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.html" />
       </list>
     </option>
   </component>
@@ -314,6 +313,17 @@
               <item name="AccountOwner" type="462c0819:PsiDirectoryNode" />
               <item name="ManageUsers" type="462c0819:PsiDirectoryNode" />
               <item name="add-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hackathon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hackathon" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="VipraParkingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="AccountOwner" type="462c0819:PsiDirectoryNode" />
+              <item name="ManageUsers" type="462c0819:PsiDirectoryNode" />
+              <item name="list-users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Hackathon" type="b2602c69:ProjectViewProjectNode" />
@@ -455,11 +465,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49946000" />
+    <option name="totallyTimeSpent" value="54640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -521,23 +530,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Sass issue fix" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="251" column="34" lean-forward="true" selection-start-line="251" selection-start-column="34" selection-end-line="251" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -652,19 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageTickets/open-tickets/open-tickets.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -703,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="143" selection-start-line="11" selection-start-column="120" selection-end-line="11" selection-end-column="143" />
         </state>
       </provider>
     </entry>
@@ -759,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManagePermits/add-permit/add-permit.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -773,13 +738,6 @@
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -796,16 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="22" selection-start-line="22" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,23 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackendLayer/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -850,31 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManagePermits/add-permit/add-permit.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,12 +812,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.ts">
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state relative-caret-position="17">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#!!block;n#createAccount#0;n#AddAccountComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AppOwner/account.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/services/AccountOwner/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackendLayer/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManagePermits/add-permit/add-permit.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AppOwner/add-account/add-account.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/list-users/list-users.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="n#table#0;n#div#1;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/list-users/list-users.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PresentationLayer/VipraParkingSystem/src/app/AccountOwner/ManageUsers/add-user/add-user.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -28,7 +28,14 @@ userRouter.route('/getallAccounts').get(function (req, res, next) {
         res.json(account);
     });
 });
-
+// Get all patraol Users
+userRouter.route('/getallPatrolUsers').get(function (req, res, next) {
+    console.log('in backend route page');
+    User.find({ "userType" : "Patrol"},function (err, account) {
+        if (err) return next(err);
+        res.json(account);
+    });
+});
 
 userRouter.post('/register', function (req, res, next) {
     let user = new User(req.body);

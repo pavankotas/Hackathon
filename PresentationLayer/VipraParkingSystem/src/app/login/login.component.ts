@@ -53,7 +53,14 @@ export class LoginComponent implements OnInit {
             if (data.userType == 'Organization Admin') {
                         this.router.navigate(['/dashboard']);
                       }
+            else {
+              // @ts-ignore
+              if(data.userType == 'Patrol'){
+                this.router.navigate(['/dashboard']);
+              }
+            }
           }
+
           // @ts-ignore
           console.log(data.message);
           // @ts-ignore
