@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-list-location',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListLocationComponent implements OnInit {
 
-  constructor() { }
+  center: any = {
+    lat: 39.034527,
+    lng: -94.575721
+  };
+
+  constructor(private router: Router) { }
+
+  addLocation() {
+    this.router.navigate(['./addLocation']);
+  }
 
   ngOnInit() {
   }

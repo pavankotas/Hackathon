@@ -66,7 +66,6 @@ export class AddLocationComponent implements OnInit {
         // this.coordinates.push(swLat);
         // this.coordinates.push(swLng);
         console.log(this.coordinates);
-        // console.log(event.overlay.bounds.ma);
       }
     });
   }

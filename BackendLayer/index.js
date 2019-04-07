@@ -7,6 +7,7 @@ const express = require('express'),
 config = require('./db');
 
 const userRoute = require('./routes/user');
+const locationRoutes = require('./routes/location');
 
 mongoose.Promise = global.Promise;
 
@@ -23,7 +24,8 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use('/user', customerRoute);
+app.use('/user', userRoute);
+app.use('/location', locationRoutes);
 
 const server = app.listen(port, function(){
     console.log('Listening on port ' + port);

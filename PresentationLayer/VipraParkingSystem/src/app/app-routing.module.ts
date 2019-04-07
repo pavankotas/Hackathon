@@ -4,10 +4,12 @@ import {LoginComponent} from "./login/login.component";
 import { ListAccountsComponent} from "./AppOwner/list-accounts/list-accounts.component";
 import {AddAccountComponent} from "./AppOwner/add-account/add-account.component";
 import {AddLocationComponent} from "./AccountOwner/ManageLocations/add-location/add-location.component";
+import {ListLocationComponent} from "./AccountOwner/ManageLocations/list-location/list-location.component";
 
 const routes: Routes = [
   { path: '', component:LoginComponent },
   { path: 'addLocation', component: AddLocationComponent},
+  { path: 'listLocations', component: ListLocationComponent},
   { path: 'appOwner_list-accounts', component:ListAccountsComponent },
   { path: 'appOwner_add-account', component:AddAccountComponent },
 ];
