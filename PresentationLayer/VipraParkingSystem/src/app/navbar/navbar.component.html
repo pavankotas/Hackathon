@@ -7,13 +7,19 @@
         <div class="navbar-nav">
           <a class="navbar-brand heading" href="/home">VipraPM</a>
         </div>
-        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0" routerLinkActive="active" *ngIf="AppOwner">
-          <li class="nav-item"><a class="nav-link" routerLink="/addAccount">{{AppOwner.addAccount}}</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/viewAllAccounts">{{AppOwner.viewAllAccounts}}</a></li>
-        </ul>
+
+      <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0" routerLinkActive="active" *ngIf="AccountAdmin">
+        <li class="nav-item"><a class="nav-link" routerLink="/dashboard">{{AccountAdmin.dashboard}}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/addUsers">{{AccountAdmin.addUser}}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/addPermit">{{AccountAdmin.addPermit}}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/viewAlltickets">{{AccountAdmin.viewTickets}}</a></li>
+      </ul>
         <ul class="nav navbar-nav" routerLinkActive="active">
           <li class="nav-item"><a class="nav-link" routerLink="/login">Logout</a></li>
         </ul>
     </div>
   </nav>
+  <div style="margin-bottom: 9em">
+
+  </div>
 

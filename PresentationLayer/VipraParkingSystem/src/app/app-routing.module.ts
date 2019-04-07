@@ -12,20 +12,25 @@ import { ListPermitsComponent} from "./AccountOwner/ManagePermits/list-permits/l
 import { OpenTicketsComponent} from "./AccountOwner/ManageTickets/open-tickets/open-tickets.component";
 import { HistoryTicketsComponent} from "./AccountOwner/ManageTickets/history-tickets/history-tickets.component";
 import {RegisterComponent} from "./register/register.component";
+import {DashboardComponent} from "./AccountOwner/dashboard/dashboard.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component:LoginComponent },
   { path: 'addLocation', component: AddLocationComponent},
   { path: 'listLocations', component: ListLocationComponent},
-  { path: 'appOwner_list-accounts', component:ListAccountsComponent},
-  { path: 'appOwner_add-account', component:AddAccountComponent },
+  { path: 'listAcounts', component:ListAccountsComponent},
+  { path: 'addAccount', component:AddAccountComponent },
+  { path: 'addUsers', component:AddUserComponent },
   { path: 'viewAllUsers', component:ListUsersComponent },
   { path: 'addPermit', component:AddPermitComponent },
   { path: 'viewAllPermits', component:ListPermitsComponent },
   { path: 'viewAlltickets', component:OpenTicketsComponent },
   { path: 'ticketHistory', component:HistoryTicketsComponent },
-  { path: 'registerUser', component:RegisterComponent }
+  { path: 'registerUser', component:RegisterComponent },
+  { path: 'dashboard', component:DashboardComponent }
+
+
 ];
 
 @NgModule({

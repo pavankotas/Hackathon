@@ -9,6 +9,7 @@ config = require('./db');
 const userRoute = require('./routes/user');
 const locationRoutes = require('./routes/location');
 const permitRoutes = require('./routes/permit');
+const accountRoutes = require('./routes/account');
 
 mongoose.Promise = global.Promise;
 
@@ -26,6 +27,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/user', userRoute);
+/*app.use('/accounts', accountRoutes);*/
 app.use('/addLocation', locationRoutes);
 app.use('/permit',permitRoutes);
 

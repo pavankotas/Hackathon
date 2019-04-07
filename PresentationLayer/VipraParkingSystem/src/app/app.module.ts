@@ -21,7 +21,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AgmCoreModule } from '@agm/core';
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
-// import { HomeComponent } from './AccountOwner/home/home.component';
 
 @NgModule({
   declarations: [
@@ -39,8 +38,7 @@ import { RegisterComponent } from './register/register.component';
     OpenTicketsComponent,
     HistoryTicketsComponent,
     NavbarComponent,
-    RegisterComponent
-    // HomeComponent
+    RegisterComponent,
   ],
   imports: [
     NgbModule,

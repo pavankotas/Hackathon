@@ -8,18 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  AppOwner ={};
+  /*AppOwner ={};*/
+  AccountAdmin = {};
   constructor() { }
 
   ngOnInit() {
     const userType = localStorage.getItem('userType');
-    if(userType == 'Application Owner'){
-      console.log(userType);
+    /*if(userType == 'Application Owner'){
       this.AppOwner = {
         addAccount : 'Add Accounts',
         viewAllAccounts: 'ViewAllAccounts'
       }
-      console.log(this.AppOwner);
+    }*/
+    if (userType == 'Organization Admin'){
+      console.log(userType);
+      this.AccountAdmin = {
+        dashboard : 'DashBoard',
+        addUser: 'Add User',
+        addPermit: 'Add Permit',
+        viewTickets: 'ViewTickets'
+      }
     }
   }
 
