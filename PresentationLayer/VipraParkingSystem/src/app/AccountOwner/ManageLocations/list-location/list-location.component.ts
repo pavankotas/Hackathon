@@ -47,8 +47,8 @@ export class ListLocationComponent implements OnInit {
       // this.rectangle.setMap();
       this.locations.forEach(function(data){
        const rectangle = {
-          north: data.coordinates[0],
-          south: data.coordinates[2],
+          north: data.coordinates[2],
+          south: data.coordinates[0],
           east: data.coordinates[1],
           west: data.coordinates[3]
         };
