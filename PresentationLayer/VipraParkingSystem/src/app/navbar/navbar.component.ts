@@ -26,7 +26,9 @@ export class NavbarComponent implements OnInit {
         dashboard : 'DashBoard',
         addUser: 'Add User',
         addPermit: 'Add Permit',
-        viewTickets: 'ViewTickets'
+        viewTickets: 'ViewTickets',
+        addLocation: 'Add Location',
+        listLocations: 'List Locations'
       }
     }
   }
