@@ -12,4 +12,38 @@ export class OpenTicketsComponent implements OnInit {
   ngOnInit() {
   }
 
+  ticketDetails= [
+    {
+      userName: 'Dharani Muli',
+      LPNumber: 'q23623623',
+      createdDate: '20/04/2019',
+      fine: '$50',
+      reason: 'Parked in wrong location',
+
+    },
+    {
+      userName: 'Dharani Muli',
+      LPNumber: 'q23623623',
+      createdDate: '20/04/2019',
+      fine: '$50',
+      reason: 'Parked in wrong location',
+
+    },
+    {
+      userName: 'Dharani Muli',
+      LPNumber: 'q23623623',
+      createdDate: '20/04/2019',
+      fine: '$50',
+      reason: 'Parked in wrong location',
+
+    },
+    {
+      userName: 'Dharani Muli',
+      LPNumber: 'q23623623',
+      createdDate: '20/04/2019',
+      fine: '$50',
+      reason: 'Parked in wrong location',
+
+    },
+  ]
 }

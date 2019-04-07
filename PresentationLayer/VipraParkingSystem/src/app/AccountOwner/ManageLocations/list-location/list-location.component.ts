@@ -11,5 +11,57 @@ export class ListLocationComponent implements OnInit {
 
   ngOnInit() {
   }
+  locationDetails= [
+    {
+      locationName: 'Miller Nichols Library',
+      address: 'Address',
+      latitude: '39.0350° N',
+      longitude: '94.5765° W',
+      generalSlots: '50',
+      specialSlots: '20',
+      cost: '$100',
 
+    },
+    {
+      locationName: 'Miller Nichols Library',
+      address: 'Address',
+      latitude: '39.0350° N',
+      longitude: '94.5765° W',
+      generalSlots: '50',
+      specialSlots: '20',
+      cost: '$100',
+
+    },
+    {
+      locationName: 'Miller Nichols Library',
+      address: 'Address',
+      latitude: '39.0350° N',
+      longitude: '94.5765° W',
+      generalSlots: '50',
+      specialSlots: '20',
+      cost: '$100',
+
+    },
+    {
+      locationName: 'Miller Nichols Library',
+      address: 'Address',
+      latitude: '39.0350° N',
+      longitude: '94.5765° W',
+      generalSlots: '50',
+      specialSlots: '20',
+      cost: '$100',
+
+    },
+    {
+      locationName: 'Miller Nichols Library',
+      address: 'Address',
+      latitude: '39.0350° N',
+      longitude: '94.5765° W',
+      generalSlots: '50',
+      specialSlots: '20',
+      cost: '$100',
+
+    },
+
+  ];
 }

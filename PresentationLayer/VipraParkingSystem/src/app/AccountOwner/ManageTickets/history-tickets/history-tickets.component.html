@@ -1,3 +1,34 @@
-<p>
-  history-tickets works!
-</p>
+<app-navbar></app-navbar>
+<div class="mt-5">
+  <div class="col-2">
+
+  </div>
+  <div class="col-12">
+    <span><h3>Tickets</h3></span>
+    <table class="table table-hover table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">User Name</th>
+        <th scope="col">LPN</th>
+        <th scope="col">Created Date</th>
+        <th scope="col">Fine</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of ticketHistory">
+        <td>{{data.userName}}</td>
+        <td>{{data.LPNumber}}</td>
+        <td>{{data.createdDate}}</td>
+        <td>{{data.fine}}</td>
+        <td>{{data.reason}}</td>
+        <td>{{data.status}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+
