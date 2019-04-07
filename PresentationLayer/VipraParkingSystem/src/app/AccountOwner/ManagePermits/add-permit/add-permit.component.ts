@@ -26,7 +26,10 @@ addPermit(formdata){
        let updatedParkingLotData =selectedParkingLot[0];
        updatedParkingLotData.available =  updatedParkingLotData.available-1;
        updatedParkingLotData.occupied =  updatedParkingLotData.occupied+1;
-       this.locationService.updateSlotAvailability(selectedParkingLot[0]._id,updatedParkingLotData);
+       this.locationService.updateSlotAvailability(selectedParkingLot[0]._id,updatedParkingLotData).subscribe(res => {
+         console.log(res);
+         this.permitData=res;
+       });
        this.permitService.getAllPermits().subscribe(res => {
          console.log(res);
          this.permitData=res;
