@@ -1,15 +1,8 @@
-<app-navbar></app-navbar>
-<div class="mt-5">
-  <div class="col-2">
-
-  </div>
-  <div class="col-12">
-    <span><h3>Permits</h3></span>
-    <table class="table table-hover table-bordered">
+ <table class="table table-hover table-bordered">
       <thead>
       <tr>
-        <th scope="col">User Name</th>
-        <th scope="col">Email ID</th>
+        <th >Username</th>
+        <th scope="col">EmailID</th>
         <th scope="col">VIN</th>
         <th scope="col">LPN</th>
         <th scope="col">Type</th>
@@ -18,12 +11,12 @@
         <th scope="col">Valid From</th>
         <th scope="col">Valid To</th>
         <th scope="col">Address</th>
-        <th scope="col">Phone Number</th>
+        <th scope="col">Phone </th>
       </tr>
       </thead>
       <tbody>
       <tr *ngFor="let data of permitDetails">
-        <td>{{data.userName}}</td>
+        <td>{{data.firstName}} {{data.lastName}}</td>
         <td>{{data.emailID}}</td>
         <td>{{data.viNumber}}</td>
         <td>{{data.lipNumber}}</td>
@@ -37,8 +30,5 @@
       </tr>
       </tbody>
     </table>
-  </div>
-
-</div>
 
 

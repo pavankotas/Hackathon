@@ -8,6 +8,7 @@ config = require('./db');
 
 const userRoute = require('./routes/user');
 const locationRoutes = require('./routes/location');
+const permitRoutes = require('./routes/permit');
 
 mongoose.Promise = global.Promise;
 
@@ -26,6 +27,7 @@ app.use(bodyParser.json());
 
 app.use('/user', userRoute);
 app.use('/addLocation', locationRoutes);
+app.use('/permit',permitRoutes);
 
 
 const server = app.listen(port, function(){
