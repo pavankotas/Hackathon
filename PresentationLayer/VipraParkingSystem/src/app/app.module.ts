@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './AppOwner/login/login.component';
+import {LoginComponent} from './login/login.component';
 import { ListAccountsComponent } from './AppOwner/list-accounts/list-accounts.component';
 import { AddAccountComponent } from './AppOwner/add-account/add-account.component';
 import { DashboardComponent } from './AccountOwner/dashboard/dashboard.component';
@@ -16,6 +17,10 @@ import { AddPermitComponent } from './AccountOwner/ManagePermits/add-permit/add-
 import { ListPermitsComponent } from './AccountOwner/ManagePermits/list-permits/list-permits.component';
 import { OpenTicketsComponent } from './AccountOwner/ManageTickets/open-tickets/open-tickets.component';
 import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-tickets/history-tickets.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AgmCoreModule } from '@agm/core';
+import {HttpClientModule} from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +36,23 @@ import { HistoryTicketsComponent } from './AccountOwner/ManageTickets/history-ti
     AddPermitComponent,
     ListPermitsComponent,
     OpenTicketsComponent,
-    HistoryTicketsComponent
+    HistoryTicketsComponent,
+    NavbarComponent,
+    RegisterComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    NgbModule,
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      apiKey: 'AIzaSyBdNOvbKOsJNJFy3eni6DSl0t7JeJAd6Wo',
+      libraries: ['places', 'drawing', 'geometry']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
