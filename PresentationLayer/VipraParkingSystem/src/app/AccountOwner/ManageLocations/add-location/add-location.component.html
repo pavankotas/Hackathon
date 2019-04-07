@@ -3,10 +3,10 @@
       <h4 class="card-header text-center font-weight-bold text-uppercase py-2">Add New Location</h4>
       <div class="card">
         <div class="card-body">
-          <form #addLocation = "ngForm" (ngSubmit)="addLocation(addLocation.value)" class="form-horizontal">
+          <form #location = "ngForm" (ngSubmit)="addLocation(location.value)" class="form-horizontal">
             <div class="form-group row">
               <label class="col-2">Name</label>
-              <input type="text" class="form-control col-8" style="height: 30px" name="name" ngModel/>
+              <input type="text" class="form-control col-8" style="height: 30px" name="parkingName" ngModel/>
             </div>
             <div class="form-group row">
               <label class="col-2">Address</label>

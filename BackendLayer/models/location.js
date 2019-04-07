@@ -15,7 +15,9 @@ let locationSchema = new Schema({
     fineAmount: {
         type: String
     },
-    noOfLots: []
+    noOfLots: {
+        type: String
+    }
 },{
     collection: 'Location'
 });

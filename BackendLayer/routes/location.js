@@ -8,15 +8,19 @@ const locationRoutes = express.Router();
 let Location = require('../models/location');
 
 // Add location
-locationRoutes.route('/add').post(function (req, res) {
-    let account = new Location(req.body);
-    Location.save()
-        .then(location => {
-            res.status(200).json({'Result': 'location added successfully'});
-        })
-        .catch(err => {
-            res.status(400).send({'Result': 'Unable to create location.'});
-        });
+locationRoutes.route('/').post(function (req, res, next) {
+    Location.create(req.body, function (err, post) {
+        if (err) return next(err);
+        res.json(post);
+    });
+    // let location = new Location(req.body);
+    // Location.save()
+    //     .then(location => {
+    //         res.status(200).json({'Result': 'location added successfully'});
+    //     })
+    //     .catch(err => {
+    //         res.status(400).send({'Result': 'Unable to create location.'});
+    //     });
 });
 
 // Get all location

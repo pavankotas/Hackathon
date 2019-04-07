@@ -25,7 +25,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/user', userRoute);
-app.use('/location', locationRoutes);
+app.use('/addLocation', locationRoutes);
 
 const server = app.listen(port, function(){
     console.log('Listening on port ' + port);

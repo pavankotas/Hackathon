@@ -6,7 +6,15 @@ import { HttpClient, HttpHeaders, HttpErrorResponse} from '@angular/common/http'
 })
 export class LocationService {
 
-  uri = 'http://localhost:4000/login';
+  uri = 'http://localhost:3000/addLocation';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  addLocation(location){
+    return this.http.post(`${this.uri}`+'/add', location);
+  }
+
+  getLocation(){
+    return this.http.get(`${this.uri}`+'/getall');
+  }
 }

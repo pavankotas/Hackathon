@@ -5,7 +5,7 @@
       <div class="row">
         <table class="table">
           <thead>
-          <tr>
+          <tr class="text-center">
             <th>Name</th>
             <th>Number of slots</th>
             <th>Occupied</th>
@@ -13,7 +13,12 @@
           </tr>
           </thead>
           <tbody>
-
+          <tr class="text-center" *ngFor="let locationName of locations;">
+            <td>{{locationName.parkingLotName}}</td>
+            <td>{{locationName.noOfLots}}</td>
+            <td>{{locationName.noOfLots}}</td>
+            <td>{{locationName.noOfLots}}</td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -21,7 +26,20 @@
         <button (click)="addLocation()" class="btn btn-success">Add Location</button>
       </div>
     </div>
-    <div class="col-5"><agm-map [zoom]="15" [latitude]="center.lat" [longitude]="center.lng" (mapReady)="onMapReady($event)" >
-    </agm-map></div>
+    <div class="col-5">
+      <agm-map [zoom]="15" [latitude]="center.lat" [longitude]="center.lng" >
+    </agm-map>
+      <!--<agm-marker-->
+        <!--[latitude]="39.034527"-->
+        <!--[longitude]="-94.575721"-->
+        <!--[markerDraggable]="true"-->
+      <!--&gt;-->
+      <!--</agm-marker>-->
+      <!--<agm-rectangle-->
+      <!--[north]="39.044526853987804"-->
+      <!--[south]="39.02452573077124"-->
+      <!--[east]="-94.55190298394774"-->
+      <!--[west]="-94.59953901605223"></agm-rectangle>-->
+    </div>
   </div>
 </div>

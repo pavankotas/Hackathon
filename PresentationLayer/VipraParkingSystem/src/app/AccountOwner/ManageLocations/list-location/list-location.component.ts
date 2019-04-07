@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {LocationService} from "../../../services/AccountOwner/location.service";
+declare const google: any;
 
 @Component({
   selector: 'app-list-location',
@@ -13,13 +15,30 @@ export class ListLocationComponent implements OnInit {
     lng: -94.575721
   };
 
-  constructor(private router: Router) { }
+  locations;
+  rectangle;
+
+  constructor(private router: Router, private locationService: LocationService) { }
 
   addLocation() {
     this.router.navigate(['./addLocation']);
   }
 
+    north;
+    south;
+    east;
+    west;
+
   ngOnInit() {
+    this.locationService.getLocation().subscribe(data => {
+      this.locations = data;
+      this.locations.forEach(function(data){
+          this.north = data.coordinates[0];
+          this.south = data.coordinates[1];
+          this.east = data.coordinates[2];
+          this.west = data.coordinates[3];
+      });
+    });
   }
 
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare const google: any;
+import {LocationService} from "../../../services/AccountOwner/location.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-location',
@@ -8,9 +10,13 @@ declare const google: any;
 })
 export class AddLocationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private locationService: LocationService, private router: Router) { }
   map;
-  coordinates;
+  neLat;
+  neLng;
+  swLat;
+  swLng;
+
 
   ngOnInit() {
   }
@@ -21,11 +27,28 @@ export class AddLocationComponent implements OnInit {
     lng: -94.575721
   };
 
-  addLocation() {
-    this.initDrawingManager(this.map);
-  }
+  // addLocation() {
+  //   this.initDrawingManager(this.map);
+  // }
 
-  saveLocation() {}
+  addLocation(event) {
+    const locationDetails = {
+      parkingLotName: event.parkingName,
+      address: event.address,
+      coordinates: [this.neLat, this.neLng, this.swLat, this.swLng],
+      fineAmount: event.fineAmount,
+      noOfLots: event.lots
+    };
+
+    console.log(locationDetails);
+
+    this.locationService.addLocation(locationDetails)
+      .subscribe(res => {
+        this.router.navigateByUrl('listLocations');
+      }, (err) => {
+        console.log(err);
+      });
+  }
 
   onMapReady(map) {
     this.initDrawingManager(map);
@@ -53,19 +76,17 @@ export class AddLocationComponent implements OnInit {
           bounds: map.getBounds()
         });
         const bounds = rectangle.getBounds();
-        const neLat = bounds.getNorthEast().lat();
-        const neLng = bounds.getNorthEast().lng();
-        const swLat = bounds.getSouthWest().lat();
-        const swLng = bounds.getSouthWest().lng();
-        // console.log(neLat);
-        // console.log(neLng);
-        // console.log(swLat);
-        // console.log(swLng);
-        this.coordinates = neLat;
+        this.neLat = bounds.getNorthEast().lat();
+        this.neLng = bounds.getNorthEast().lng();
+        this.swLat = bounds.getSouthWest().lat();
+        this.swLng = bounds.getSouthWest().lng();
+        console.log(this.neLat);
+        console.log(this.neLng);
+        console.log(this.swLat);
+        console.log(this.swLng);
         // this.coordinates.push(neLng);
         // this.coordinates.push(swLat);
         // this.coordinates.push(swLng);
-        console.log(this.coordinates);
       }
     });
   }
