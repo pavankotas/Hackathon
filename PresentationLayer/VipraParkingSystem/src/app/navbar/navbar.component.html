@@ -5,23 +5,23 @@
     </button>
     <div class="navbar-collapse container" id="navbarToggler">
         <div class="navbar-nav">
-          <a class="navbar-brand heading" href="/home">VipraPM</a>
+          <a class="navbar-brand heading" href="/home" style="color: #009688;">VipraPM</a>
         </div>
 
       <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0" routerLinkActive="active" *ngIf="AccountAdmin">
         <li class="nav-item"><a class="nav-link" routerLink="/dashboard">{{AccountAdmin.dashboard}}</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/addUsers">{{AccountAdmin.addUser}}</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/addPermit">{{AccountAdmin.addPermit}}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/viewAlltickets">{{AccountAdmin.viewTickets}}</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/addLocation">{{AccountAdmin.addLocation}}</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/listLocations">{{AccountAdmin.listLocations}}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/viewAlltickets">{{AccountAdmin.viewTickets}}</a></li>
       </ul>
         <ul class="nav navbar-nav" routerLinkActive="active">
           <li class="nav-item"><a class="nav-link" routerLink="/login">Logout</a></li>
         </ul>
     </div>
   </nav>
-  <div style="margin-bottom: 9em">
+  <div style="margin-bottom: 6em">
 
   </div>
 
