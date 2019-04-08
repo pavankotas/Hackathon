@@ -14,35 +14,39 @@ export class OpenTicketsComponent implements OnInit {
 
   ticketDetails= [
     {
-      userName: 'Dharani Muli',
-      LPNumber: 'q23623623',
-      createdDate: '20/04/2019',
+      userName: 'Lisa',
+      LPNumber: 'DYA008',
+      createdDate: '04/04/2019',
       fine: '$50',
       reason: 'Parked in wrong location',
+      status: 'Open'
 
     },
     {
-      userName: 'Dharani Muli',
-      LPNumber: 'q23623623',
-      createdDate: '20/04/2019',
-      fine: '$50',
-      reason: 'Parked in wrong location',
+      userName: 'Goerge',
+      LPNumber: 'RK071',
+      createdDate: '04/01/2019',
+      fine: '$20',
+      reason: 'Not Authorized User',
+      status: 'Open'
 
     },
     {
-      userName: 'Dharani Muli',
-      LPNumber: 'q23623623',
-      createdDate: '20/04/2019',
-      fine: '$50',
-      reason: 'Parked in wrong location',
+      userName: 'Briyana',
+      LPNumber: 'ADDY104',
+      createdDate: '03/24/2019',
+      fine: '$100',
+      reason: 'Having no permit to park in this location',
+      status: 'Closed'
 
     },
     {
-      userName: 'Dharani Muli',
-      LPNumber: 'q23623623',
-      createdDate: '20/04/2019',
-      fine: '$50',
-      reason: 'Parked in wrong location',
+      userName: 'Ashok',
+      LPNumber: 'BCEXHA',
+      createdDate: '03/21/2019',
+      fine: '$10',
+      reason: 'Given time exceeded',
+      status: 'Closed'
 
     },
   ]

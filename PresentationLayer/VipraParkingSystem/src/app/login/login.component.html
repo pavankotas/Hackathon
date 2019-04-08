@@ -17,6 +17,9 @@
       <div class="form-group col-8">
         <button type="submit" class="btn btn-primary vipra-blue-button width-100" (click)="userLogin()">Login</button>
       </div>
+      <div>
+        <p style="color: #B22222" *ngIf="InvalidUser">* Please enter valid credentials</p>
+      </div>
       <!--div *ngIf="InvalidUser" class="form-group">
         <span style="color: red"> *Please check your credentials</span>
       </div>-->
