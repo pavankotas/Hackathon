@@ -6,8 +6,6 @@ https://github.com/pavankotas/Hackathon/wiki/%23-Hackathon-:-Vipra-Parking-Manag
 
 ## Please find the Video links of our application here
 
-Part-1:  
-   https://youtu.be/J6y7eoZqlPI
+Part-1:  https://youtu.be/J6y7eoZqlPI
 
-Part-2: 
-  https://youtu.be/IMDnN7Q_HMg
+Part-2:  https://youtu.be/IMDnN7Q_HMg
