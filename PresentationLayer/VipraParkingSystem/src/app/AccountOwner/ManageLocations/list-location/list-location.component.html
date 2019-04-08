@@ -1,12 +1,12 @@
 <div class="card" style="border: none;">
   <h4 class="card-header text-center font-weight-bold text-uppercase py-2">List of Parking Lots</h4>
   <div class="row">
-    <div class="col-7">
-      <div class="row">
+    <div class="col-6">
+      <div class="row ml-2">
         <table class="table">
           <thead>
           <tr class="text-center">
-            <th>Name</th>
+            <th class="text-left">Name</th>
             <th>Number of slots</th>
             <th>Occupied</th>
             <th>Available</th>
@@ -14,7 +14,7 @@
           </thead>
           <tbody>
           <tr class="text-center" *ngFor="let locationName of locations;">
-            <td>{{locationName.parkingLotName}}</td>
+            <td class="text-left">{{locationName.parkingLotName}}</td>
             <td>{{locationName.noOfLots}}</td>
             <td>{{locationName.occupied}}</td>
             <td>{{locationName.available}}</td>
@@ -22,12 +22,12 @@
           </tbody>
         </table>
       </div>
-      <div class="row">
-        <button (click)="addLocation()" class="btn btn-success">Add Location</button>
+      <div class="row ml-2">
+        <button (click)="addLocation()" class="btn btn-success">Add New Location</button>
       </div>
     </div>
-    <div class="col-5">
-      <agm-map [zoom]="11" [latitude]="center.lat" [longitude]="center.lng" >
+    <div class="col-6">
+      <agm-map [zoom]="13" [latitude]="center.lat" [longitude]="center.lng" >
         <agm-rectangle *ngFor="let rectangle of rectanglesCoordinate" [north]="rectangle.north"
         [south]="rectangle.south"
         [east]="rectangle.east"
