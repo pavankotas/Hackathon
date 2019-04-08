@@ -12,7 +12,6 @@ export class AddPermitComponent implements OnInit {
 private permitData;
 private locationData:any;
 private distinctLocations : Array<any> = [];
-  private parkingSlots : Array<any> = [];
   private parkingLocations: Array<any> =[];
 
   constructor(private permitService: PermitService, private locationService: LocationService) { }

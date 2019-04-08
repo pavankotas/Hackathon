@@ -16,7 +16,7 @@ let locationSchema = new Schema({
         type: String
     },
     noOfLots: {
-        type: String
+        type: Number
     },
     occupied: {
         type: Number

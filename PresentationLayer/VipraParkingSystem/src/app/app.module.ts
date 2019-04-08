@@ -21,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AgmCoreModule } from '@agm/core';
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     NgbModule,
     HttpClientModule,
+    ChartsModule,
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
       apiKey: 'AIzaSyBdNOvbKOsJNJFy3eni6DSl0t7JeJAd6Wo',
