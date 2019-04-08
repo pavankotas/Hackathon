@@ -23,6 +23,9 @@ let locationSchema = new Schema({
     },
     available: {
         type: Number
+    },
+    permitAmount: {
+        type:String
     }
 },{
     collection: 'Location'

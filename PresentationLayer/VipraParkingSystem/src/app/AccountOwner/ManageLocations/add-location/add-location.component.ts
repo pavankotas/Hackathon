@@ -42,7 +42,8 @@ export class AddLocationComponent implements OnInit {
       fineAmount: event.fineAmount,
       noOfLots: event.lots,
       occupied: 0,
-      available: event.lots
+      available: event.lots,
+      permitAmount: event.permitAmount
     };
 
     console.log(locationDetails);
@@ -81,6 +82,7 @@ export class AddLocationComponent implements OnInit {
         const rectangle = new google.maps.Rectangle({
           bounds: map.getBounds()
         });
+        console.log("gshdgsh - "+map.getBounds());
         const bounds = rectangle.getBounds();
         this.neLat = bounds.getNorthEast().lat();
         this.neLng = bounds.getNorthEast().lng();
