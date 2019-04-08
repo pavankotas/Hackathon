@@ -29,9 +29,11 @@
           </form>
       </div>
   </div>
-      <div>
-        <input type="text" [(ngModel)]="query">
-        <button type="button" class="btn btn-info" (click)="getAddress()">Search</button>
+      <div class="row mt-2 mb-1">
+        <div class="col-2">
+          <input type="text" [(ngModel)]="query"></div>
+        <div class="col-3">
+        <button type="button" class="btn btn-info" (click)="getAddress()">Search Location</button></div>
       </div>
       <agm-map [zoom]="15" [latitude]="center.lat" [longitude]="center.lng" (mapReady)="onMapReady($event)" >
       </agm-map>
