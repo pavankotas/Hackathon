@@ -1,4 +1,85 @@
 <app-navbar></app-navbar>
-<p>
-  dashboard works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body totalparkiglotsboxbg">
+          <p class="card-text">
+           Total Registered parking Lots
+          </p>
+          <div >
+           <b> {{ allParkingSLocations.length}}</b>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body totalpermitsboxbg">
+          <p class="card-text">
+            Total Permits issued
+          </p>
+          <div>
+            <b>{{toatlPermits.length}}</b>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body totalavailableboxbg">
+
+          <p class="card-text">
+            Total available slots
+          </p>
+          <div>
+           <b> {{availableSlots}} / {{totalSlots}}</b>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body totaoccupiedboxbg">
+          <p class="card-text">
+            Total occupied slots
+          </p>
+          <div>
+            {{occupiedSlots}} / {{totalSlots}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding-top: 20px">
+    <div class="col-md-6">
+
+        <div class="chart" >
+          <canvas baseChart
+                  [data]="pieChartData"
+
+                  [chartType]="pieChartType"
+
+                  [colors]="pieChartColors"
+               [labels]="pieChartLabels">
+          </canvas>
+        </div>
+      <h5 style="padding-left: 260px; padding-top: 5px">Total Slots</h5>
+      </div>
+    <div class="col-md-6">
+
+      <div class="chart" >
+        <canvas baseChart
+                [data]="pieChartData2"
+
+                [chartType]="pieChartType2"
+
+                [colors]="pieChartColors2"
+                [labels]="pieChartLabels2">
+        </canvas>
+      </div>
+      <h5 style="padding-left: 195px; padding-top: 5px">Available slots for each parking lot</h5>
+    </div>
+  </div>
+</div>
